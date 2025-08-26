@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Shop — CRTL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="site">
+    <header>
+        <div class="brand">
+            <div class="badge">
+                <div class="logo">CRTL</div>
+                <div class="strap">Consumer Regret Takes Long</div>
+            </div>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <section>
+        <h2>The Collection</h2>
+        <p><p>Here’s the deal: no gimmicks, no hype, no garbage. Just clothes. If you want a “statement piece,” go raid a high school girl's closet.</p></p>
+
+        <div class="grid" id="product-grid">
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Shirt" alt="CRTL Shirt"></div>
+                <h3 class="p-title">CRTL Shirt</h3>
+                <p class="p-sub">Simple, clean, reliable shirt.</p>
+                <div class="price-row">
+                    <div class="price">$28</div>
+                    <button class="btn quick-view" data-id="1">Quick view</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Hoodie" alt="CRTL Hoodie"></div>
+                <h3 class="p-title">CRTL Hoodie</h3>
+                <p class="p-sub">Warm and comfortable.</p>
+                <div class="price-row">
+                    <div class="price">$68</div>
+                    <button class="btn quick-view" data-id="2">Quick view</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Socks" alt="CRTL Socks"></div>
+                <h3 class="p-title">CRTL Socks</h3>
+                <p class="p-sub">Soft socks for daily use.</p>
+                <div class="price-row">
+                    <div class="price">$12</div>
+                    <button class="btn quick-view" data-id="3">Quick view</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Stickers" alt="CRTL Sticker Pack"></div>
+                <h3 class="p-title">CRTL Sticker Pack</h3>
+                <p class="p-sub">Decorate things subtly.</p>
+                <div class="price-row">
+                    <div class="price">$8</div>
+                    <button class="btn quick-view" data-id="4">Quick view</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Tote" alt="CRTL Tote Bag"></div>
+                <h3 class="p-title">CRTL Tote Bag</h3>
+                <p class="p-sub">Carry things with minimal flair.</p>
+                <div class="price-row">
+                    <div class="price">$22</div>
+                    <button class="btn quick-view" data-id="5">Quick view</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="thumb"><img src="https://via.placeholder.com/600x600/0b0d0e/9aa4ad?text=CRTL+Cap" alt="CRTL Cap"></div>
+                <h3 class="p-title">CRTL Cap</h3>
+                <p class="p-sub">Keep the sun out, stay stylish.</p>
+                <div class="price-row">
+                    <div class="price">$24</div>
+                    <button class="btn quick-view" data-id="6">Quick view</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <div id="backdrop" class="modal-backdrop" role="dialog" aria-hidden="true">
+        <div class="modal">
+            <div class="left">
+                <div class="thumb" id="modal-thumb">
+                    <img src="" alt="" />
+                </div>
+            </div>
+            <div class="right">
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-top:12px;">
+                    <div id="modal-price" style="font-weight:800; font-size:18px"></div>
+                    <button class="close btn ghost">Close</button>
+                </div>
+                <div style="margin-top:12px; display:flex; flex-direction:column; gap:10px;">
+                    <button class="btn" id="modal-add-to-cart">Add to cart</button>
+                    <button class="btn ghost" onclick="alert('Demo only')">Buy now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div>© CRTL — Consumer Regret Takes Long</div>
+        <div style="text-align:right; color:var(--muted)">Functional design for everyday use.</div>
+    </footer>
+
+</div>
+    <script src="script.js"></script>
+    <script>
+    document.querySelectorAll('.quick-view').forEach(button => {
+        button.addEventListener('click', () => {
+            const id = button.getAttribute('data-id');
+            openModal(id);
+        });
+    });
+    </script>
+</body>
+</html>
