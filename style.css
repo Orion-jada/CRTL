@@ -144,3 +144,20 @@ section {
     margin-bottom: 24px;
     border: 1px solid rgba(255,255,255,0.05);
 }
+
+/* Added styles for consistent product image scaling */
+.product-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.modal-thumb img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

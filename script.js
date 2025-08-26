@@ -1,10 +1,10 @@
 const PRODUCTS = {
-  1: { id:1, title:'CRTL Shirt', price:'$28', desc:'A shirt. Not life-changing, but better than that old thing in your drawer.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Shirt' },
-  2: { id:2, title:'CRTL Hoodie', price:'$68', desc:'Keeps you warm. Might make you slightly more interesting to look at.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Hoodie' },
-  3: { id:3, title:'CRTL Socks', price:'$12', desc:'Soft, reliable, and unlikely to be lost in the laundry for more than 3 days.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Socks' },
-  4: { id:4, title:'CRTL Sticker Pack', price:'$8', desc:'Stick it somewhere. Or don’t. We don’t judge.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Stickers' },
-  5: { id:5, title:'CRTL Tote Bag', price:'$22', desc:'Carries your things. Might also carry your existential dread.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Tote' },
-  6: { id:6, title:'CRTL Cap', price:'$24', desc:'Keep the sun out. Look marginally cooler than your neighbor.', img:'https://via.placeholder.com/900x900/0b0d0e/9aa4ad?text=CRTL+Cap' }
+  1: { id:1, title:'CRTL Shirt', price:'$28', desc:'It’s a shirt. Congrats on leveling up from nudity.', img:'images/shirt.png' },
+  2: { id:2, title:'CRTL Hoodie', price:'$68', desc:'Keeps you warm. Won’t fix your personality.', img:'images/hoodie.png' },
+  3: { id:3, title:'CRTL Socks', price:'$12', desc:'They’re socks. You’ll lose them anyway.', img:'images/socks.png' },
+  4: { id:4, title:'CRTL Sticker Pack', price:'$8', desc:'Cover scratches, or your crippling need for identity.', img:'images/stickers.png' },
+  5: { id:5, title:'CRTL Tote Bag', price:'$22', desc:'Carries groceries, gym clothes, or your poor life choices.', img:'images/tote.png' },
+  6: { id:6, title:'CRTL Cap', price:'$24', desc:'Blocks sunlight. Sadly, not your bad decisions.', img:'images/cap.png' }
 };
 
 const backdrop = document.getElementById('backdrop');
